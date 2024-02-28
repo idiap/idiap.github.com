@@ -1,116 +1,80 @@
 /* CSS Document */
 /* Initial version made by [VS] vincent.spano@idiap.ch */
 /* date: 23.02.2012 */
-/*the html page structure is defined has follow:
-mainbcontainer
-	headercontainer
-		logocontainer
-		bannercontainer
-	headercontainer
-	
-	middlecontainer
-		addresscontainer
-		contentcontainer
-			roundbox
-	middlecontainer
-	
-	footercontainer
-mainbcontainer
-*/
-
-html {
-    position: relative;
-    min-height: 100%;
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #ffffff;
+  color: #636363;
+  font-family: Arial, Helvetica, Verdana, "Lucida Grande", Lucida sans-serif;
+  font-size: 0.8em;
+  text-align: justify;
+  line-height: 1.5;
 }
-
-body{
-background-color:#ffffff;
-margin:0em 0em 0em 0em;
-color: #636363;
-font-family: Arial,Helvetica,Verdana,"Lucida Grande",Lucida sans-serif;
-font-size:0.8em;
-text-align: justify;
-line-height: 1.5;
+img {
+  border: 0;
 }
-img{
-border:0;
+/* start style for the main container with a fixed size */
+.maincontainer {
+  width: 1280px;
+  margin: 40px auto;
+  background-color: #ffffff;
 }
-/*this is the style for the main container with a fixed size*/
-#maincontainer{
-width:1280 !important; /*for all browsers */
-width:1300; /*for IE */
-margin:0em auto;
-float:none;
-background-color:#ffffff;
+/* start style for the container header */
+.headercontainer {
+  width: 1280px;
+  height: 100px;
+  background-color: #ffffff;
 }
-/*this is the style for the container header*/
-#headercontainer{
-width:1280 !important; /*for all browsers */
-width:1300; /*for IE */
-height: 100px;
-background-color:#ffffff;
-margin:0em;
-padding:0em 0em 0em 0em;
-clear:both;
+/* strart style for the container logo */
+.logocontainer {
+  width: 300px;
+  padding: 0.8em 0em 0em 3em;
+  float: left;
+  background-color: #ffffff;
 }
-/*this is the style for the container logo*/
-#logocontainer{
-width:300 !important; /*for all browsers */
-width:330;/*for IE only*/
-padding:0.8em 0em 0em 3em;
-float:left;
-background-color: #ffffff;
+/* start style for the midlle container */
+.middlecontainer {
+  width: 1280px;
+  background-color: #ffffff;
 }
-/*this is the style for the container banner*/
-
-
-/*this is the style for the midlle container*/
-#middlecontainer{
-width:1280;
-clear:both;
-background-color:#ffffff;
-margin:0em;
-padding:0em;
+/* start style for the container footer */
+.footercontainer {
+  width: 100%;
+  height: auto;
+  padding: 0px;
+  background-color: #333333;
+  float: none;
+  color: white;
+  text-align: center;
+  bottom: 0;
 }
-/*this is the style for the container address*/
-#addresscontainer{
-width:auto !important; /*for all browsers */
-width:265;/*for IE */
-padding:0em 0em 0em 9.5em;
-margin:2.4em 0em 0em 0em;
-background-color:#ffffff;
-float:left;
+.footertxt {
+  text-align: center;
 }
-/*this is the style for the container content*/
-#contentcontainer{
-width:630;
-padding:0em 0em 0em 0em;
-margin:2.3em 2.0em 2em 6.5em !important; /*for all browsers */
-margin:2.3em 2.0em 2em 5em;/*for IE */
-float:left;
-background-color:#ffffff;
+.footercontainer img {
+  width: 30px;
+  height: 30px;
 }
-/*this is the style for the container footer*/
-#footercontainer{
-position: absolute;	
-clear:both;
-width:100%;
-height:auto;
-padding:0.5em 0em 0.8em 0em;
-background-color: #333333;
-float: none;
-color:white;
-text-align: center;
-bottom:0;
-}
-#footertxt
-{
-text-align: center;
-}
-h1.documentFirstHeading {
+@media only screen and (max-width: 1279px) {
+  .footercontainer img {
+    width: 40px;
+    height: 40px;
+  }
+  .maincontainer {
+    width: 100%;
+  }
+  .headercontainer {
+    width: 90%;
+  }
+  .middlecontainer {
+    width: 95%;
+    margin: 20px;
+  }
+  h1.documentFirstHeading {
     font-size: 36px;
     font-weight: 300;
     color: #0099cc;
     border-bottom: none;
+  }
 }
-
