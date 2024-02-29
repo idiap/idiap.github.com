@@ -60,11 +60,9 @@ img {
   height: 30px;
 }
 @media only screen and (max-width: 1279px) {
-	
    .footercontainer{
 	 position: relative; 
 	}	
-	
   .footercontainer img {
     width: 40px;
     height: 40px; 
@@ -84,5 +82,5 @@ img {
     font-weight: 300;
     color: #0099cc;
     border-bottom: none;
-  }
+  }	
 }
