@@ -1,6 +1,7 @@
 /* CSS Document */
 /* Initial version made by [VS] vincent.spano@idiap.ch */
 /* date: 23.02.2012 */
+
 body {
   margin: 0px;
   padding: 0px;
@@ -48,18 +49,25 @@ img {
   color: white;
   text-align: center;
   bottom: 0;
+  position: fixed;
 }
 .footertxt {
   text-align: center;
+  padding-bottom: 20px;
 }
 .footercontainer img {
   width: 30px;
   height: 30px;
 }
 @media only screen and (max-width: 1279px) {
+	
+   .footercontainer{
+	 position: relative; 
+	}	
+	
   .footercontainer img {
     width: 40px;
-    height: 40px;
+    height: 40px; 
   }
   .maincontainer {
     width: 100%;
